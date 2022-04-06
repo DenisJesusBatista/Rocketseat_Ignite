@@ -3,3 +3,7 @@ node_modules
 tsconfig.json
 package.json
 yarn.lock
+.editorConfig
+.eslintrc.js
+package-lock.json
+prettier.config.js
