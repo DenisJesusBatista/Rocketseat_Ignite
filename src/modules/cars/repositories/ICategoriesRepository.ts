@@ -1,4 +1,3 @@
-import { Category } from "../model/Category"
 
 //DTO => Data transfer object
 interface ICreateCategoryDTO {
@@ -7,8 +6,8 @@ interface ICreateCategoryDTO {
 }
 
 interface ICategoriesRepository {
-    findByName(name: string): Category
-    list(): Category[];
+    findByName(name: string): ICreateCategoryDTO
+    // list(): Category[];
     create({ name, description }: ICreateCategoryDTO): void;
 }
 
